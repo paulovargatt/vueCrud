@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/','PostController@home')->name('home');
+
+Route::resource('/posts','PostController');
